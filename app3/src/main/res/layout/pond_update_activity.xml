@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="鱼塘名："
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/edt_pond_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="鱼塘简介："
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/edt_pond_intro"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/editshape"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定" />
+
+</LinearLayout>

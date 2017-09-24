@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <Button
+        android:id="@+id/btn_upload_time_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据上传时间间隔" />
+
+    <Button
+        android:id="@+id/btn_oxygen_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="溶氧值上下限设置" />
+
+    <Button
+        android:id="@+id/btn_feeding_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="投饲时间设置" />
+
+    <include layout="@layout/together_control_layout" />
+</LinearLayout>

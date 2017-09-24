@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_aerator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="增氧机状态："
+                android:textSize="@dimen/text_normal" />
+
+            <RadioGroup
+                android:id="@+id/radio_aerator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_aerator"
+                android:layout_toRightOf="@id/tv_aerator"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/aerator_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关" />
+
+                <RadioButton
+                    android:id="@+id/aerator_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/aerator_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="确定" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_feeding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="投饲机状态："
+                android:textSize="@dimen/text_normal" />
+
+            <RadioGroup
+                android:id="@+id/radio_feeding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_feeding"
+                android:layout_toRightOf="@id/tv_feeding"
+                android:checkedButton="@+id/aerator_close"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/feeding_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关" />
+
+                <RadioButton
+                    android:id="@+id/feeding_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/feeding_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="确定" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_control_log"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="操作历史记录："
+            android:textSize="@dimen/text_normal"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

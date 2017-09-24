@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_province1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="省份："
+            android:textSize="@dimen/text_normal" />
+
+        <Spinner
+            android:id="@+id/spinner_show_province"
+            android:layout_toRightOf="@id/tv_province1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市："
+            android:textSize="@dimen/text_normal" />
+
+        <Spinner
+            android:id="@+id/spinner_show_city"
+            android:layout_toRightOf="@id/tv_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="区/县："
+            android:textSize="@dimen/text_normal" />
+
+        <Spinner
+            android:id="@+id/spinner_show_district"
+            android:layout_toRightOf="@id/tv_district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_show_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定" />
+
+</LinearLayout>

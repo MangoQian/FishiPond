@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基地名："
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/edt_base_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基地简介："
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/edt_base_intro"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/editshape"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_province1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="省份："
+            android:textSize="@dimen/text_normal" />
+
+        <Spinner
+            android:id="@+id/spinner_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_province1">
+        </Spinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市："
+            android:textSize="@dimen/text_normal" />
+
+        <Spinner
+            android:id="@+id/spinner_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_city">
+        </Spinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="区/县："
+            android:textSize="@dimen/text_normal" />
+
+        <Spinner
+            android:id="@+id/spinner_district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_district">
+        </Spinner>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_base_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"/>
+
+</LinearLayout>

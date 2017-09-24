@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+                <!-- Customize your theme here. -->
+                <item name="colorPrimary">@color/colorPrimary</item>
+                <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+                <item name="colorAccent">@color/colorAccent</item>
+                <item name="android:colorBackground">@color/Khaki1</item>
+                <item name="android:actionOverflowMenuStyle">@style/MyStyle</item>
+        </style>
+        <style name="MyStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+                <item name="overlapAnchor">false</item>
+        </style>
+</resources>
